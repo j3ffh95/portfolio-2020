@@ -259,6 +259,11 @@ body:not(.user-is-tabbing) a:focus {
   border-bottom: 1px solid var(--orange);
 }
 
+.link__text:hover,
+.link__text:focus {
+  color: #000;
+}
+
 .link__text::after {
   content: "";
   display: block;
