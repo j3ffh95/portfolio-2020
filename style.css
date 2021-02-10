@@ -472,15 +472,19 @@ body:not(.user-is-tabbing) a:focus {
   margin-bottom: var(--gutter-normal);
 }
 
-.work__code {
+.social-github-link {
   display: block;
   height: 3rem;
   margin-left: var(--gutter-normal);
   transition: all 0.3s;
 }
 
-.work__code:hover {
-  transform: scale(1.2);
+/* Hover effect */
+.social-github-link i:hover {
+  -webkit-animation: bump 0.25s ease-in-out;
+  -moz-animation: bump 0.25s ease-in-out;
+  animation: bump 0.25s ease-in-out;
+  cursor: pointer;
 }
 
 .work__image-box {
