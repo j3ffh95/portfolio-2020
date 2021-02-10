@@ -582,6 +582,31 @@ body:not(.user-is-tabbing) a:focus {
   list-style: none;
 }
 
+/* Hover effect */
+.social-link i:hover {
+  -webkit-animation: bump 0.25s ease-in-out;
+  -moz-animation: bump 0.25s ease-in-out;
+  animation: bump 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+/* Changing the colors */
+.fa-codepen:hover {
+  color: #c6c6c6;
+}
+
+.fa-linkedin-in:hover {
+  color: #0085ae;
+}
+
+.fa-github-alt:hover {
+  color: #f03c2e;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
 .footer__social-link-item:not(:last-of-type) {
   margin-right: var(--gutter-small);
 }
@@ -599,6 +624,43 @@ body:not(.user-is-tabbing) a:focus {
   height: 2.5rem;
   width: 84px;
   transform: translateY(3px);
+}
+
+/* bump animation */
+@-moz-keyframes bump {
+  33% {
+    -moz-transform: scale(1.3);
+  }
+  66% {
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bump {
+  33% {
+    -webkit-transform: scale(1.3);
+  }
+  66% {
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bump {
+  33% {
+    transform: scale(1.3);
+  }
+  66% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 500px) {
