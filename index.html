@@ -402,7 +402,7 @@
       </div>
     </section> -->
 
-    <section id="contact">
+    <!-- <section id="contact">
 
       <div class="row">
         <h2>Contact Me</h2>
@@ -449,14 +449,63 @@
             </div>
           </div>
           <div class="col-xs-12">
-            <!-- <div class="btn-lrg submit-btn">Send Message</div> -->
             <button type="submit" class=" btn-lrg submit-btn submitform">Submit</button>
           </div>
         </fieldset>
         </form>
 
       </div>
-    </section>
+    </section> -->
+    <div class="contact-container">
+
+      <div class="row">
+        <h2>Contact Me</h2>
+        <div class="contact__info">
+          <p>
+            Are you looking for a fast-performing and user-friendly website to
+            represent your product or business? In need of a consultation? Do you have feedback or just want to say Hi👋 ? Please
+            feel free to contact me.
+          </p>
+        </div>
+      </div>
+
+    <form method="POST"
+        data-netlify="true"
+        name="contact"
+        id="contactForm"
+        onsubmit="return confirm('Thanks for contacting me!');">
+
+      <div class="row input-container">
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <input name="name" type="text" id="contactName" required />
+              <label>Name</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+              <input name="email" type="email" id="contactEmail" required />
+              <label>Email</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input" style="float:right;">
+              <input name="phone" type="tel" id="phoneNumber" required />
+              <label>Phone Number</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <textarea name="message" id="contactMessage" required></textarea>
+              <label>Message</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button type="submit" class=" btn-lrg submit-btn submitform">Submit</button>
+          </div>
+      </div>
+    </form>
+    </div>
 
     <!-- ***** Footer ***** -->
 

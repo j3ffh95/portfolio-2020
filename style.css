@@ -577,6 +577,10 @@ body:not(.user-is-tabbing) a:focus {
   overflow: auto;
 }
 
+.contact-container {
+  overflow: auto;
+}
+
 fieldset {
   border: none;
 }
